@@ -1,42 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital@0;1&family=Yeseva+One&display=swap');
+/* font-family: 'Nunito Sans', sans-serif;
+font-family: 'Yeseva One', cursive; */
+
 body {
     margin: 0;
-    font-family: Nunito Sans, Arial, sans-serif;
+    font-family: Nunito Sans, Arial, Helvetica, sans-serif;
 }
 
 body * {
     box-sizing: border-box;
 }
+
 .container {
     max-width: 1437.88px;
     margin: 0 auto;
 }
 
-
 .button {
-    background: #e38873;
+    background: #E3B873;
     box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
     border-radius: 2px;
     outline: 0;
     border: 0;
-    padding: 13px 33px;
     color: white;
     text-transform: uppercase;
-    /* italic */
+    font-family: Nunito Sans, Arial, Helvetica, italic;
+    font-style: italic;
+}
+
+.buttonlight {
+    border-radius: 2px;
+    background: rgba(255, 255, 255, .0);
+    border: 1px solid rgba(255, 255, 255, 1);
+    outline: 0;
+    color: white;
+    text-transform: uppercase;
+    font-family: Nunito Sans, Arial, Helvetica, italic;
+    font-style: italic;
+}
+
+/* buttonsize */
+.button161 {
+    height: 37px;
+    width: 161px;
+    padding: 13px 0px;
+
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.button207 {
+    height: 51px;
+    width: 207px;
+    padding: 19px 0px 20px;
+
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.button200 {
+    height: 51px;
+    width: 200px;
+}
+
+.button228 {
+    height: 54px;
+    width: 228px;
+}
+
+.button213 {
+    height: 51px;
+    width: 213px;
+}
+
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    max-width: 434px;
+    justify-content: space-between;
 }
 
 .logo {
-    color: #e38873;
+    color: #E3B873;
+    text-transform: uppercase;
 }
 
+.phone {
+    text-decoration: none;
+    color: #E3B873;
+    ;
+    margin-right: 47px;
+}
+
+/* header */
 .header {
     background-color: black;
 }
 
 .header-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     height: 83px;
     align-items: center;
+
+    font-family: Nunito Sans;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: left;
+
 }
 
 .header-navigation {
@@ -53,14 +133,16 @@ body * {
     color: white;
 }
 
+/* page1 */
 .hero {
     background-image: url(../images/hero.png);
     background-size: cover;
     height: 707px;
-    padding-top: 194px; 
-    position: relative;   
+    padding-top: 194px;
+    position: relative;
 }
-.hero-overlay{
+
+.hero-overlay {
     content: '';
     position: absolute;
     top: 0;
@@ -69,18 +151,239 @@ body * {
     right: 0;
     background-color: rgba(0, 0, 0, .7);
 }
-.hero-container{
+
+.hero-container {
     position: relative;
     z-index: 1;
 }
 
 .title {
     margin: 0;
-    font-family: Yeseva One, 'Times New Roman', Times, serif;
+    margin-left: 135px;
+    width: 676px;
+    color: white;
+    text-transform: uppercase;
+    font-family: Yeseva One, Times New Roman, Times, serif;
     font-size: 40px;
     font-weight: 400;
     line-height: 53px;
     letter-spacing: 0em;
     text-align: left;
+
+}
+
+.accent {
+    color: #E3B873;
+}
+
+.sub-title {
+    margin: 0;
+    margin-top: 19px;
+    margin-bottom: 41px;
+    margin-left: 135px;
+    width: 504px;
     color: white;
+
+    font-family: Nunito Sans, Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.page1-button-container {
+    margin-left: 135px;
+}
+
+/* page2 */
+
+.page2 {
+    background: rgba(19, 19, 19, 1);
+    height: 1074px;
+}
+
+.page2-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 89px;
+    padding: 107px 135px 257px;
+
+}
+
+.page2-columns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.page2-navigation {
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+    margin: 0;
+    /* margin-bottom: 45; */
+}
+
+.page2-navigation__item {
+    margin-right: 47px;
+}
+
+.page2-navigation__item a {
+
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.3);
+    text-transform: uppercase;
+    font-family: Yeseva One;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.page2-img1 {
+    margin-top: 53px;
+    height: 482px;
+    width: 679px;
+}
+
+.page2-column-left {
+    margin-top: 69px;
+    margin-right: 50px;
+    height: 482px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.page2-column-right {
+    margin-left: 50px;
+}
+
+.page2-column-left-tab {
+    display: flex;
+    flex-direction: row;
+    /* margin-top: 13px; */
+}
+
+.page2-column-left-left {
+    margin-right: 29px;
+}
+
+.page2-column-left-right {
+    margin-left: 29px;
+}
+
+.page2-h3 {
+    text-transform: uppercase;
+    color: rgba(227, 184, 115, 1);
+    height: 66px;
+    width: 253px;
+    padding: 5px;
+    font-family: Yeseva One;
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 37px;
+    letter-spacing: -0.07em;
+    text-align: left;
+    margin: 0;
+
+
+}
+
+.page2-h4 {
+    text-transform: uppercase;
+    color: rgba(227, 184, 115, 1);
+    font-family: Yeseva One;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 9px;
+
+}
+
+.page2-p14 {
+    color: rgba(255, 255, 255, 1);
+    font-family: Nunito Sans, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+    height: 86px;
+    width: 442px;
+    margin-top: 34px;
+}
+
+.page2-p13 {
+    color: rgba(255, 255, 255, 1);
+    font-family: Nunito Sans, Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    height: 42px;
+    margin-top: 9px;
+}
+
+.arrows {
+    display: flex;
+    flex-direction: row;
+    margin-top: 79px;
+    height: 13px;
+    width: 205px;
+    justify-content: space-between;
+    justify-self: flex-end;
+}
+
+.page2-arrow {
+    /* color: rgba(255, 255, 255, 1);    */
+    color: rgba(255, 255, 255, 0.3);
+    height: 13px;
+    width: 41.5px;
+
+}
+
+.point {
+    /* background-color: rgba(255, 255, 255, 1); */
+    background-color: rgba(255, 255, 255, 0.3);
+    height: 9.5px;
+    width: 9.5px;
+    border-radius: 50%;
+}
+
+.page2-h5 {
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 1);
+    font-family: Yeseva One;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: center;
+
+}
+/* значки с иконкой */
+.dark-sighn {
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    height: 66.79px;
+    width: 196px;
+    background: rgba(19, 19, 19, 1);
+    color: rgba(255, 255, 255, 1);
+    font-family: Yeseva One;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+.sighn-stroke {
+    margin: 9.47px;
 }
