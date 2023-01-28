@@ -2,6 +2,10 @@
 /* font-family: 'Nunito Sans', sans-serif;
 font-family: 'Yeseva One', cursive; */
 
+.active {
+    border-bottom: 2px solid #9c2d2d;
+}
+
 body {
     margin: 0;
     font-family: Nunito Sans, Arial, Helvetica, sans-serif;
@@ -208,6 +212,7 @@ body * {
     flex-direction: column;
     padding-top: 89px;
     padding: 107px 135px 257px;
+    align-items: center;
 
 }
 
@@ -215,6 +220,7 @@ body * {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 92px;
 }
 
 .page2-navigation {
@@ -368,6 +374,7 @@ body * {
     text-align: center;
 
 }
+
 /* значки с иконкой */
 .dark-sighn {
     text-transform: uppercase;
@@ -384,6 +391,384 @@ body * {
     letter-spacing: 0em;
     text-align: center;
 }
+
+.light-sighn {
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    height: 66.79px;
+    width: 196px;
+    color: rgba(19, 19, 19, 1);    
+    background: rgba(255, 255, 255, 1);
+    font-family: Yeseva One;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
 .sighn-stroke {
     margin: 9.47px;
+}
+
+
+/* page3 */
+
+.page3 {
+    position: relative;
+    margin-top: -203px;
+    margin-bottom: -203px;
+}
+
+.page3-container {
+    /* background-image: url(../images/overvideo.png);
+    background-size: cover;   */
+    height: 434px;
+    width: 817px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 135px 0;
+    align-items: center;
+    /* margin-top: -203px;
+    margin-bottom: -203px; */
+    /* z-index: 1;
+    position: relative;     */
+}
+
+.video {
+    background-image: url(../images/overvideo.png);
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.video-overlay {
+    background-color: rgba(0, 0, 0, .7);
+    position: relative;
+    z-index: 2;
+    margin-top: -434px;
+    margin-bottom: -434px;
+}
+
+/* page4 */
+.page4 {
+    padding-top: 434px;
+    height: 1005px;
+}
+
+.page4-container {
+    /* height: 2464px; */
+    display: flex;
+    flex-direction: column;
+    padding: 61px 135px 0 135px;
+    align-items: center;
+
+}
+
+.page4-p18 {
+    width: 681px;
+    font-family: Nunito Sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 37px;
+    letter-spacing: 0em;
+    text-align: center;
+
+}
+
+.page4-inputs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 51px;
+    width: 769px;
+    margin-top: 91px;
+
+}
+
+.block-input {
+    display: flex;
+    flex-direction: column;
+    width: 231px;
+    height: 44px;
+    justify-content: center;
+}
+
+.block-input-plaseholder {
+    font-family: Nunito Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(54, 54, 54, 1);
+    border-width: 0 0 1px 0;
+    border-bottom-color: rgba(54, 54, 54, 0.3);
+}
+
+.block-input-title {
+    font-family: Nunito Sans;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(54, 54, 54, 0.5);
+
+}
+
+.block-input-line {
+    width: 231px;
+    color: rgba(54, 54, 54, 0.3);
+
+}
+
+.block-checkbox {
+    display: flex;
+    flex-direction: row;
+    margin: 35px;
+    /* width: 285px; */
+    align-items: center;
+}
+
+.block-checkbox-checkbox {
+    /* display: block; */
+    margin: 12px;
+    background-color: #E3B873;
+}
+
+.block-checkbox-checkbox:checked {
+    /* display: block; */
+    margin: 12px;
+    background-color: #E3B873;
+}
+
+/* page5 */
+.page5{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.page5-container {
+    display: flex;
+    flex-direction: column;    
+    margin: 0 135px 0;
+    align-items: center;    
+}
+
+.page5-columns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 92px;
+}
+
+/* page5-block */
+
+.page5-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 392px;
+    height: 582px;
+    margin: 30px;
+    /* background-color: aquamarine; */
+
+}
+.page5-block-img{
+    height: 421px;
+    width: 392px;    
+}
+.page5-block-texts {
+    height: 286px;
+    width: 330px;
+    position: relative;
+    top: -127px;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.03);
+}
+
+.page5-block-text1 {
+    font-family: Yeseva One;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 25px 34px 13px 34px;
+    color: rgba(54, 54, 54, 1);
+
+}
+
+.page5-block-list {
+    color: rgba(149, 149, 149, 1);
+    font-family: Nunito Sans;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    height: 178px;
+    padding-left: 15px;
+    list-style-type: initial;
+    margin: 13px 29px 49px 34px;
+}
+
+/* red-table */
+
+.page5-red-table {
+    display: flex;
+    height: 54px;
+    width: 228px;
+    background-color: #E3B873;
+    justify-content: center;
+    text-transform: uppercase;
+    position: relative;
+    top: -154px;
+    align-self: start;
+    /* margin: 25px 34px 13px 30px; */
+    margin-left: 30px; 
+    padding: 17px 0;
+
+}
+
+.page5-red-table_text {
+    font-family: Yeseva One;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+}
+
+/* page6 */
+.page6{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.page6-container {
+    display: flex;
+    flex-direction: column;    
+    margin: 0 135px 242px;
+    align-items: center;   
+    /* background-color: aqua;  */
+}
+
+.page6-columns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* margin-bottom: 92px; */
+}
+.page6-column{
+display: flex;
+flex-direction: column;    
+height: 725px;
+width: 737px;
+background-color: beige;
+padding-top: 65px;
+}
+.page6-black-square{
+    margin-top: 117px;
+display: flex;
+flex-direction: column;    
+height: 509px;
+width: 506px;
+background-color: rgba(19, 19, 19, 1);
+
+justify-self: center;
+align-self: center;
+}
+
+.img-page6-block1-overlay{    
+  
+    height: 645px;
+    /* width: 1006px; */
+    width: 737px;
+    justify-self: right;
+    position: relative;
+    top: -668px;
+    bottom: -668px;
+}
+/* sign-block */
+.page6-sign-block{
+    display: flex;
+flex-direction: row; 
+justify-content: center;
+align-items: center;
+    height: 72px;
+    width: 441px;   
+    margin-top: 38px; 
+    align-self: center;
+}
+
+.page6-sign-block-sircle{
+    display: flex;
+justify-content: center;
+align-items: center;
+    height: 72px;
+width: 72px;
+border-radius: 50%;
+background: rgba(227, 184, 115, 1);
+box-shadow: 0px 10px 20px 0px rgba(237, 192, 120, 0.2);
+
+}
+.page6-sign-text{
+    margin-left: 25px;
+    font-family: Nunito Sans;
+font-size: 18px;
+font-weight: 400;
+line-height: 26px;
+letter-spacing: 0em;
+text-align: left;
+color: rgba(227, 184, 115, 1);
+box-shadow: 0px 3px 10px 0px rgba(227, 184, 115, 0.15);
+
+}
+
+/* page6-number-block */
+
+.page6-number-block{
+display: flex;
+flex-direction: row; 
+align-items: center;
+height: 50px;
+margin: 52px 0 52px 238px; 
+}
+
+.page6-number-block-sircle{   
+display: flex;
+justify-content: center;
+align-items: center;
+height: 50px;
+width: 50px;
+border-radius: 50%;
+border: 8px solid rgba(255, 255, 255, 1); 
+background-color: #E3B873;
+}
+.page6-number-block-sircle-text{
+    display: flex;
+    font-family: Yeseva One;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);    
+}
+
+.page6-number-text{
+    display: flex;
+    font-family: Nunito Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(54, 54, 54, 1);
+    margin-left: 17px;
+    width: 323px;
 }
