@@ -5,8 +5,116 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+
+.black{
+    background-color: black;
+    
+    padding: 20px;
+    width: 100%;
+    height: 100px;
+}
+.white{
+    background-color: white;
+    width: 100%;
+    height: 100px;
+    padding: 20px;
+    
+}
+.text-white{
+    color: black;
+}
+.text-black{
+    color: white;
+}
+.input-black{
+    outline: 0; 
+    border-top: 0;  
+    border-left: 0;
+    border-right: 0;
+    background-color: black;    
+    border-bottom-width: 1px;
+    -webkit-text-fill-color: white;
+}
+
+.input-black:-webkit-autofill,
+.input-black:-webkit-autofill:hover,  
+.input-black:-webkit-autofill:focus,
+.input-black:-webkit-autofill:active{
+-webkit-box-shadow: 0 0 0 30px black inset !important; 
+-webkit-text-fill-color: white;
+
+/* outline: 0 rgb(212, 27, 27) 1px;    */
+/* border-color: gray; */
+}
+
+.input-white{
+    outline: 0; 
+    border-top: 0;  
+    border-left: 0;
+    border-right: 0;
+    background-color: white;    
+    border-bottom-width: 1px;
+    
+    -webkit-text-fill-color: black;
+}
+
+.input-white:-webkit-autofill,
+.input-white:-webkit-autofill:hover,  
+.input-white:-webkit-autofill:focus,
+.input-white:-webkit-autofill:active{
+-webkit-box-shadow: 0 0 0 30px white inset !important; 
+-webkit-text-fill-color: black;
+
+}
+
+ /* input:-webkit-autofill,
+input:-webkit-autofill:hover,  
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active{
+-webkit-box-shadow: 0 0 0 30px black inset !important; 
+-webkit-text-fill-color: #31b0dd;
+outline: 0;   
+border-color: aqua;
+} */
+
+/* input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus {
+  -webkit-text-fill-color: #31b0dd;
+  -webkit-box-shadow: 0 0 0px 40rem #ffff inset;
+} */
+
+/* input:focus{
+    background-color: violet; 
+    }
+input:-webkit-autofill{
+    background-color: red;
+}
+input:-webkit-autofill:hover{
+ background-color: yellow;
+} 
+input:-webkit-autofill:focus-visible{
+color: blue;
+background-color: violet; 
+} 
+
+input:-internal-autofill-selected {
+  -webkit-text-fill-color: #31b0dd;
+  background-image: none !important;
+  
+  background-color: white;
+  border-color: #c0325c    
+} */
+  /* input:-internal-autofill-selected {
+    appearance: menulist-button;
+    background-image: none !important;
+    background-color: -internal-light-dark(rgb(14, 91, 224), rgba(148, 23, 85, 0.4)) !important;
+    color: fieldtext !important;
+} */
+    </style>
 </head>
-<body style="background-color: rgb(24, 56, 56);">
+<body style="background-color: white;">
     <img src="./icons/Group (1).svg">      
     <img src="./icons/Group (2).svg">      
     <img src="./icons/Group (3).svg">      
@@ -24,6 +132,25 @@
     <img src="./icons/Vector (Stroke).svg">   
     <img src="./icons/Vector.svg">   
     <img src="./icons/Group.svg">   
+<br>
+<br>
+<br>
+<br>
+
+<div class="block-input black">
+    <label class="block-input-title text-black" for="phone">Phone</label>
+    <input class=" block-input-plaseholder input-black" type="text" id="phone" name="phone"
+        placeholder="Your phone number:">
+</div>
+
+<br>
+<br>
+<br>
+<div class="block-input white">
+    <label class="block-input-title text-white" for="phone">Phone</label>
+    <input class=" block-input-plaseholder input-white" type="text" id="phone" name="phone"
+        placeholder="Your phone number:">
+</div>
 
 </body>
 </html>

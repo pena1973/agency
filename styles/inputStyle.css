@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital@0;1&family=Yeseva+One&display=swap');
+/* Задать */
+/* input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px white inset !important; */
+/* } */
+
+/* block-input */
+
+.block-input-group {
+    display: flex;
+    flex-direction: column;
+    width: 231px;
+    height: 44px;
+    justify-content: center;
+}
+
+.block-input {
+    font-family: Nunito Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+    /* color: rgba(54, 54, 54, 1); */
+    border-width: 0 0 1px 0;
+    border-bottom-color: rgba(54, 54, 54, 0.3);
+}
+
+.block-title {
+    font-family: Nunito Sans;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(54, 54, 54, 0.5);
+}
+
+/* white инпут */
+.block-title_white{
+    color: black;  
+}
+
+.input-white {
+    outline: 0;
+    border: 0 0 1px 0;
+    background-color: white;
+    -webkit-text-fill-color: black;
+}
+
+.input-white:-webkit-autofill,
+.input-white:-webkit-autofill:hover,
+.input-white:-webkit-autofill:focus,
+.input-white:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+    -webkit-text-fill-color: black;
+}
+
+/* black инпут */
+.block-title_black{
+    color: rgba(255, 255, 255, 0.5);  
+}
+.input-black {
+    outline: 0;
+    border: 0 0 1px 0;
+    -webkit-text-fill-color: white;
+    border-bottom-color: rgba(255, 255, 255, 0.15);
+    background-color: rgba(19, 19, 19, 1);
+
+}
+
+.input-black:-webkit-autofill,
+.input-black:-webkit-autofill:hover,
+.input-black:-webkit-autofill:focus,
+.input-black:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px rgb(20, 20, 20) inset !important;
+    -webkit-text-fill-color: white;    
+    border-bottom-color: rgb(54, 54, 54);
+}
+
+/* чекбоксы */
+
+.checkbox-label {
+    width: 287px;
+    height: 21px;
+    display: flex;
+    align-items: flex-end;
+    font-size: 14px;
+}
+
+.checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.checkbox~span {
+    display: flex;
+    cursor: pointer;
+}
+
+.checkbox+span::before {
+    content: '';
+    width: 18px;
+    height: 18px;
+    margin: 0px 8.62px 3px 0px;
+    box-sizing: border-box;
+    border: 1px solid;
+    border-radius: 1px;
+    background: center / auto no-repeat;
+}
+
+.checkbox:checked+span::before {
+    border-color: #E3B873;
+    background-color: #E3B873;
+    background-image: url("../icons/check.svg");
+}
+
+.checkbox:not(:checked)+span:hover::before {
+    background-color: #E3B873;
+}
+
+.checkbox:focus+span::before {
+    background-color: #E3B873;
+}
+
+/* для белого */
+.checkbox-label-gray {
+    color: #181818;
+}
+
+.checkbox-gray+span::before {
+    border-color: rgba(54, 54, 54, 0.5);
+}
+
+.checkbox-gray:focus+span::before {
+    border-color: rgba(54, 54, 54, 0.5);
+}
+
+/* для черного */
+.checkbox-label-white {
+    color: #FFFFFF;
+}
+
+.checkbox-white+span::before {
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.checkbox-white:focus+span::before {
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+/* 
+      HTML с классами для белого фона:
+<label class="checkbox-label checkbox-label-gray">
+  <input class="checkbox checkbox-gray" type="checkbox" required value="yes">
+  <span></span>
+  <span>I agree to the processing of personal data</span>
+</label>
+Для чёрного фона:
+<label class="checkbox-label checkbox-label-white">
+  <input class="checkbox checkbox-white" type="checkbox" required value="yes">
+  <span></span>
+  <span>I agree to the processing of personal data</span>
+</label> */
