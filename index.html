@@ -6,12 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/reset.css">
-    <!-- <link rel="stylesheet" href="./styles/style.css"> -->
-    <link rel="stylesheet" href="./styles/buttonStyles.css">
-    <link rel="stylesheet" href="./styles/inputStyle.css">
-    <link rel="stylesheet" href="./styles/fontsStyle.css">
-    <link rel="stylesheet" href="./styles/sighnStyle.css">
-    <link rel="stylesheet" href="./styles/webStyle.css">
+   
+    <!-- Общие стили -->
+
+    <link rel="stylesheet" type="text/css" href="./styles/inputStyle.css">   
+    
+    <!-- адаптация -->
+    <link rel="stylesheet" media="screen and (min-width:1300px)" type="text/css" href="./styles/webStyle.css">
+    <link rel="stylesheet" media="screen and (max-width:1299px)" type="text/css" href="./styles/style1300.css">
+    
+    <link rel="stylesheet" media="screen and (min-width:1300px)" type="text/css" href="./styles/buttonStyles.css">
+    <link rel="stylesheet" media="screen and (max-width:1299px)" type="text/css" href="./styles/buttonStyles1300.css">
+    
+    <link rel="stylesheet" media="screen and (min-width:1300px)" type="text/css" href="./styles/fontsStyle.css">
+    <link rel="stylesheet" media="screen and (max-width:1299px)" type="text/css" href="./styles/fontsStyle1300.css">
+
+    <link rel="stylesheet" media="screen and (min-width:1300px)" type="text/css" href="./styles/sighnStyle.css">
+    <link rel="stylesheet" media="screen and (max-width:1299px)" type="text/css" href="./styles/sighnStyle1300.css">
+
+
     <title>Agency</title>
 
     </head>
@@ -23,7 +36,7 @@
                     IC "Repair Design Project"
                 </div>
                 <nav>
-                    <ul class="navigation">
+                    <ul class="navigation none">
                         <li class="navigation__item"><a href="#" class="item">HOME</a></li>
                         <li class="navigation__item"><a href="#a1" class="item">PROJECTS</a></li>
                         <li class="navigation__item"><a href="#a2" class="item">MEASUREMENT</a></li>
@@ -32,7 +45,7 @@
                     </ul>
                 </nav>
                 <a class="phone" href="tel:+7(928)768-32-39">+7 (928) 768-32-39</a>
-                <button class="button button161">Request a call</button>
+                <button class="button button161 none">Request a call</button>
             </div>
         </header>
         <main>
@@ -45,13 +58,9 @@
                         with work time saving up to 45 days and 20% from
                         cost of materials due to the organization of work
                     </h2>
-                    <div class="button-container page1-button-container">
-                        <button class="button  button207">
-                            CALCULATE THE COST
-                        </button>
-                        <button class="buttonlight button207">
-                            SUBMIT YOUR APPLICATION
-                        </button>
+                    <div class=" page1-button-container">
+                        <button class="button  button207"> CALCULATE THE COST </button>
+                        <button class="buttonlight button207"> SUBMIT YOUR APPLICATION</button>
                     </div>
                 </div>
                 <div class="hero-overlay"></div>
@@ -68,7 +77,17 @@
                                 the
                                 site. For 14 years on in the construction <br> market we have made happy more than 1000
                                 families</p>
-                            <div class="page2-column-left-tab">
+                                
+                                <img class="page2-img2-1300 webnone" src="./images/page2-1300.png" alt="page2-1300.png">
+                                <div class="circles-mob webnone">
+                                    <div class="circle-mob">
+                                        <img class="arrow-mob" src="./icons/arrow-left.svg" alt="arrow-left.svg">
+                                    </div>
+                                    <div class="circle-mob">
+                                        <img class="arrow-mob" src="./icons/arrow-right.svg" alt="arrow-right.svg">
+                                    </div>
+                                </div>
+                                <div class="page2-column-left-tab">
                                 <div class="page2-column-left-left">
                                     <h4 class="page2-text3 Yesev18">City:</h4>
                                     <p class="page2-text4 Nunito13">Rostov-on-Don <br> LCD admiral</p>
@@ -82,7 +101,7 @@
                                     <p class="page2-text4 Nunito13">Upon request</p>
                                 </div>
                             </div>
-                            <div class="page2-arrows arrows">
+                            <div class="page2-arrows arrows none">
                                 <img class="arrow" src="./icons/ArrowLeft.svg" alt="ArrowLeft.svg">
                                 <div class="point active-white"></div>
                                 <div class="point"></div>
@@ -92,7 +111,7 @@
 
                         </div>
                         <!-- column right -->
-                        <div class="page2-column-right">
+                        <div class="page2-column-right none">
 
                             <ul class="page2-navigation">
                                 <li class="page2-navigation__item Yesev14 active"><a href="#a21">Rostov-on-Don, Admiral</a></li>
@@ -104,7 +123,7 @@
                     </div>
                     <!-- dark sighn камера-->
                     <div class="dark-sighn">
-                        <p class="text-dark-sighn">online control</p>
+                        <p>online control</p>
                         <div class="sighn-icon-group">
                             <img class="sighn-stroke" src="./icons/strokeRed.svg" alt="stroke.svg">
                             <img class="sighn-icon" src="./icons/cam.svg" alt="cam.svg">
@@ -135,29 +154,37 @@
                         the clock. At any time, you can go to our website and monitor the progress of work in your
                         apartment. You can watch the live broadcast from one of our facilities!
                         Leave a request below and you will receive a link to the broadcast.</p>
+                    
                     <div class="page4-inputs">
                         
-                        <div class="block-input-group">
-                            <label class="block-title" for="name">Name</label>
-                            <input class="block-input input-white" type="text" id="name" name="name"
+                        <div class="block-input-group input-group-mob">
+                            <label class="block-title block-title-mob" for="name">Name</label>
+                            <input class="block-input input-white input-mob" type="text" id="name" name="name"
                                 placeholder="What is your name:">
                         </div>
 
-                        <div class="block-input-group">
-                            <label class="block-title" for="phone">Phone</label>
-                            <input class="block-input input-white" type="text" id="phone" name="phone"
+                        <div class="block-input-group input-group-mob">
+                            <label class="block-title block-title-mob" for="phone">Phone</label>
+                            <input class="block-input input-white input-mob" type="text" id="phone" name="phone"
                                 placeholder="Your phone number:">
                         </div>
 
-                        <button class="button button200">Submit</button>
+                        <button class="button button200 none">Submit</button>
                     </div>
 
-                    <label class="checkbox-label checkbox-label-gray page6-checkbox">
+                    <label class="checkbox-label checkbox-label-gray page4-checkbox none">
                         <input class="checkbox checkbox-gray" type="checkbox" required value="yes">
                         <span></span>
                         <span>I agree to the processing of personal data</span>
                     </label> 
 
+                    <label class="checkbox-label checkbox-label-white page4-checkbox webnone">
+                        <input class="checkbox checkbox-white" type="checkbox" required value="yes">
+                        <span></span>
+                        <span>I agree to the processing of personal data</span>
+                    </label> 
+
+                    <button class="button button200 webnone page4-button-mob webnone">Submit</button>
                 </div>
 
             </section>
@@ -238,7 +265,7 @@
             </section>
             
             <!-- page6 -->
-            <section class="page6">
+            <section class="page6 none">
                 <div class="container page6-container">
                     <div class="page6-columns">
                         <div class="page6-column">
@@ -319,8 +346,9 @@
                      <div class="container page7-container">
                         <div class="page7-column1">
                           <h3 class="page7-text1 Yesev27">We realize your <br> wildest fantasies</h3>
-                              <h4 class="page7-text2 Nunito20">American classic</h4>
-                             <ul class="page7-list Nunito20">
+                            <img class="img-page7-mob webnone" src="./images/page7-1300.png" alt="page7-1300.png">
+                              <h4 class="page7-text2 Nunito20 none">American classic</h4>
+                             <ul class="page7-list Nunito20 none">
                                 <li class="page7-list-point">Empire</li>
                                 <li class="page7-list-point">Classical</li>
                                 <li class="page7-list-point">Loft</li>
@@ -333,13 +361,13 @@
                                 <li class="page7-list-point">Eclecticism</li>
                             </ul>
                         </div>
-                        <div class="page7-column2">
-                            <img class="img-page7-1" src="./images/page7-image1.png" alt="page7-image1.png">
-                            <img class="img-page7-3" src="./images/page7-image3.png" alt="page7-image3.png">
+                        <div class="page7-column2 none">
+                            <img class="img-page7-1 none" src="./images/page7-image1.png" alt="page7-image1.png">
+                            <img class="img-page7-3 none" src="./images/page7-image3.png" alt="page7-image3.png">
                         </div>
-                        <div class="page7-column3">
-                            <img class="img-page7-2" src="./images/page7-image2.png" alt="page7-image2.png">
-                            <img class="img-page7-4" src="./images/page7-image4.png" alt="page7-image4.png">
+                        <div class="page7-column3 none">
+                            <img class="img-page7-2 none" src="./images/page7-image2.png" alt="page7-image2.png">
+                            <img class="img-page7-4 none" src="./images/page7-image4.png" alt="page7-image4.png">
                         </div>             
                 
                 </div>
@@ -347,7 +375,7 @@
             </section>
              
             <!-- page8 -->
-            <section class="page8">
+            <section class="page8 none">
                 <div class="container page8-container">
                     <div class="light-sighn">
                         <p class="text-light-sighn">our clients</p>
@@ -468,6 +496,7 @@
     
             <section class="page10">
                 <div class="container page10-container">
+                    <div class="webnone"><img class="page10-map" src="./images/map-mob.png" alt="map-mob.png"></div>        
                     <p class="page10-text Yesev20">Rostov-on-Don, Nansen St., 239 Shopping Center <br>
                         Decorum Tel +7 (928) 768 32 29</p>
                         <div class="page10-signs">
@@ -475,10 +504,10 @@
                             <div class="page10-sign-circle"><img class="page10-sign" src="./icons/lock.svg" alt="lock.svg"></div>
                         </div>
                         
-                    <img class="page10-map" src="./images/map.png" alt="map.png">        
+                    <img class="page10-map none" src="./images/map.png" alt="map.png">        
                 </div> 
 
-                    <div class="page10-overlay"></div>
+                    <div class="page10-overlay none"></div>
             </section>
     
             </main>
@@ -488,7 +517,7 @@
                         IC "Repair Design Project"
                     </div>
                     <nav>
-                        <ul class="navigation">
+                        <ul class="navigation none">
                             <li class="navigation__item"><a href="#" class="item">HOME</a></li>
                             <li class="navigation__item"><a href="#a1" class="item">PROJECTS</a></li>
                             <li class="navigation__item"><a href="#a2" class="item">MEASUREMENT</a></li>
@@ -497,7 +526,7 @@
                         </ul>
                     </nav>
                     <a class="phone" href="tel:+7(928)768-32-39">+7 (928) 768-32-39</a>
-                    <button class="button button161">Request a call</button>
+                    <button class="button button161 none">Request a call</button>
                 </div>
             </footer>
             

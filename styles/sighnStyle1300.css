@@ -1,0 +1,70 @@
+
+/* slider */
+
+.arrows {
+    display: flex;
+    flex-direction: row;    
+    height: 13px;
+    width: 205px;
+    justify-content: space-between;
+    justify-self: flex-end;
+}
+
+.arrow {
+    /* color: rgba(255, 255, 255, 1);    */
+    color: rgba(255, 255, 255, 0.3);
+    height: 13px;
+    width: 41.5px;
+
+}
+
+.point {
+    background-color: rgba(255, 255, 255, 0.3);
+    height: 9.5px;
+    width: 9.5px;
+    border-radius: 50%;
+}
+.active-white{
+    background-color: white;
+}
+
+
+/* значки с иконкой */
+/* Темный */
+.dark-sighn {
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    height: 75px;
+    /* width: 196px; */
+    background: rgba(19, 19, 19, 1);
+    color: rgba(255, 255, 255, 1);    
+    font-family: Yeseva One;
+    font-size: 22px;
+    line-height: 30px;    
+    text-align: center;
+    font-weight: 400;    
+}
+
+/* Светлый */
+.light-sighn {
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    height: 75px;
+    background: rgba(255, 255, 255, 1);    
+   
+    font-family: Yeseva One;
+    font-size: 22px;
+    line-height: 30px;    
+    text-align: center;
+    font-weight: 400;    
+}
+.sighn-icon-group{
+ padding-top: 13px;
+border-radius: 1px;
+
+}
+.sighn-stroke {
+    margin: 9.47px;
+}
